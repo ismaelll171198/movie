@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 	resources :countrys
 	resources :comentarios
 	resources :lenguages
-  resources :peliculas do
-    resources :comentarios
-  end
+  # resources :peliculas do
+  #   resources :comentarios
+  # end
   get 'peliculas/index'
   
 
