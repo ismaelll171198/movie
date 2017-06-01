@@ -1,0 +1,22 @@
+<div class="container">
+
+<%= form_for @pelicula do |pelicula|%>
+ 
+<%= pelicula.text_field :name %>
+<br>
+<br>
+<%= pelicula.text_field :stars %>
+<br>
+<br>
+<%= pelicula.text_field :main_actor %>
+<br>
+<br>
+<%= pelicula.text_field :year %> </br>
+
+<!-- y asi con todos los campos…venga -->
+ 
+<%= pelicula.submit "Guardar peli" %>
+ 
+<%end%>
+</div>
+ 

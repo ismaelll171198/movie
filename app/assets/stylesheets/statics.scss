@@ -1,3 +1,104 @@
 // Place all the styles related to the statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#cabesa{
+	background-color: #E4B313;
+	padding-bottom: 5em;
+}
+#titulo{
+	font-family: cursive;
+	color: #BA1313;
+}
+#searchform{
+position: relative;
+top: 2rem;
+}
+.dropbtn {
+    background-color: #E4B313;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    top: 1em;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #CEA317}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #CEA317;
+}
+#separasion{
+    position: relative;
+    top: -0.4em;
+    background-color: #000000;
+    padding-top: 1em; 
+}
+#pelititulo{
+    font-family: cursive;
+}
+#tituloserie{
+    font-family: cursive;
+}
+#titulomusica{
+    font-family: cursive;
+}
+#titulojuego{
+    font-family: cursive;
+}
+#footer{
+    font-family: cursive;
+    background-color: #000000;
+    color: #BA1313;
+}
+#aboutsobre{
+    font-family: cursive;
+}
+#angrytomato{
+    font-family: cursive;
+}
+#descripcionabout{
+    font-family: cursive;
+}
+#contactoabout{
+    font-family: cursive;
+}
+#contacto1{
+    font-family: cursive;
+}
+#contacto2{
+    font-family: cursive;
+}
+#footerabout{
+    position: relative;
+    top: 26.1em;
+    font-family: cursive;
+    background-color: #000000;
+    color: #BA1313;
+}
+    

@@ -1,0 +1,17 @@
+<%= form_for([@pelicula,@pelicula.comentarios.build]) do |p| %>
+
+	<p>
+		<%= p.label :name %>
+		<%= p.text_field :name %>
+	<br>
+	</p>
+	<p>
+		<%= p.label :body %><br>
+		<%= p.text_area :body %>
+	</p>
+	<br>
+	<br>
+	<p>
+		<%= p.submit %>
+	</p>
+<% end %>
