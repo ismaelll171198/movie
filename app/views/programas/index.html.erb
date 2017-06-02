@@ -1,0 +1,12 @@
+<h1>Aqui estan todos los programas que tenemos en la BBDD</h1>
+
+<% @programas.each do |programa| %>
+
+<p> <%= link_to programa.name, programa %> </p>
+<p><%= programa.name %></p>
+<p><%= programa.stars %></p>
+<p><%= programa.main_actor %></p>
+<p><%= programa.year %></p>
+
+<%end%>
+<p> <%= link_to "añadir nuevo programa", new_programa_path  %> </p>

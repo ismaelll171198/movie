@@ -1,0 +1,29 @@
+<h2>Añade aqui un nuevo programa</h2>
+
+<%= form_for @programa do |programa| %>
+
+<p>
+	<%= programa.label :name %> <br/>
+	<%= programa.text_field :name %>
+</p>
+
+<p>
+	<%= programa.label :stars %> <br/>
+	<%= programa.text_field :stars %>
+</p>
+
+<p>
+	<%= programa.label :main_actor %> <br/>
+	<%= programa.text_field :main_actor %>
+</p>
+
+<p>
+	<%= programa.label :year %> <br/>
+	<%= programa.text_field :year %>
+</p>
+
+	<%= programa.submit "Añadir programa"%>
+
+<%end%>
+
+<p> <%= link_to "Añadir nuevo programa", new_programa_path %> </p>
