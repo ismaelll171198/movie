@@ -10,9 +10,7 @@ Rails.application.routes.draw do
 
 	resources :peliculas
 	resources :genres
-	resources :countrys
 	resources :comentarios
-	resources :lenguages
   resources :settings
   # resources :peliculas do
   #   resources :comentarios

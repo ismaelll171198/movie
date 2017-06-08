@@ -1,2 +1,0 @@
-class LenguagesController < ApplicationController
-end
