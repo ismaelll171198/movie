@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 	resources :countrys
 	resources :comentarios
 	resources :lenguages
+  resources :settings
   # resources :peliculas do
   #   resources :comentarios
   # end
