@@ -9,37 +9,42 @@ class SettingsController < ApplicationController
 	end
 	
 	def new
-		@setting = current_user.setting.new
+		@setting = current_user.build_setting
 	end
 	
 	def create
-		@setting = current_user.setting.new(setting_params)
-		if @setting.save 
-			redirect_to settings_path
-		else
-			render :new
-		end
+		@setting = current_user.build_setting(setting_params)
+ 
+	   if @setting.save
+		redirect_to settings_path
+	  else
+		render :new
+	  end
+
 	end
 
 	def edit
-		@setting = current_user.setting.find(params[:id])
+		@setting = Setting.find(params[:id])
 	end
 
 	def update
-		@setting = current_user.setting.find(params[:id])
-		if @setting.update_attributes(setting_params)
-			redirect_to settings_path
-		else
-			render :index
-		end
+		 @setting = Setting.find(params[:id])
+ 
+ 		 if @setting.update_attributes(setting_params)
+   		redirect_to settings_path
+ 		 else
+		render :index
+  		end
 	end	
+
 
 	private
 
 	def setting_params
-		params.require(:setting).permit(:languages ,:countries)	
-	end
+  	params.require(:setting).permit(:country, :language)
+	end  
 end
+
 	
 
 		

@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   root :to => "statics#index"
   get '/about' => 'statics#about', :as => :about
   get 'statics/index'
-
   get 'statics/about'
-
+  get 'settings/index'
+  resources :settings
 	resources :peliculas
 	resources :genres
 	resources :comentarios
@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   #   resources :comentarios
   # end
   get 'peliculas/index'
+
+
+
   
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
