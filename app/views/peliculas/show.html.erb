@@ -1,7 +1,7 @@
 <div class="container">
 <b>Nombre de la pelicula:</b> <%= @pelicula.name %>
 <br>
-<b>Estrellas que tiene:</b> <%= @pelicula.stars %>
+<b>Tomates que tiene:</b> <%= @pelicula.stars %>
 <br>
 <b>Actor principal:</b> <%= @pelicula.main_actor %>
 <br>
@@ -9,10 +9,8 @@
 <br>
 <b>Se añadio a la base de datos el...</b> <%= @pelicula.created_at %>
 <br> 
-<h2> <%= @pelicula.comentarios.count %> Comentarios</h2>
-	<%= render @pelicula.comentarios %>
-	<h3> Add a Comentarios: </h3>
-	<%= render 'comentarios/form' %>
+<%= image_tag @pelicula.url %>
+<br>
 <%= link_to 'Borrar', pelicula_path(@pelicula), :method => :delete %>
 <p><%= link_to "Back", peliculas_path %></p>
 </div>
