@@ -58,3 +58,4 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "font-awesome-rails"
 gem 'activeadmin', github: 'activeadmin'
 gem 'cancancan'
+gem 'stripe', '~> 2.11'
